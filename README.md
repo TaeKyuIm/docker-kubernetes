@@ -6,8 +6,14 @@
 
 해당 파일을 다운받고
 
-export KUBECONFIG=$HOME/본인의 kubeconfig 파일.yaml
+vi ~/.bashrc
+
+export KUBECONFIG=[네이버에서 다운 받은 경로]
 (보통 default로 다운 받으면 경로는 $HOME/kubeconfig-뭐라뭐라.yaml)
+
+source ~/.bashrc
+
+적용후 로그아웃해서 다시 터미널에서 환경변수 적용된지 확인.
 
 KUBECONFIG의 환경변수 설정해주면 어느 클라우드 서비스보다 간편히 클러스터 구성이 가능하다.
 
